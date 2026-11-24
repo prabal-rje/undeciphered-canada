@@ -1,0 +1,63 @@
+name: "Contribute a New Canadian Cipher"
+description: "Submit a genuine historical coded letter, telegram, or wartime intercept tied to Canada from an official archive (Issues only; no code PRs)."
+title: "[New Cipher] <year>: <short title>"
+labels: ["new-cipher", "community-credit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit a genuine raw historical ciphertext (1600s to 1950s) with a Canadian connection!
+        **Policy:** Submit raw ciphertexts, keys, and archive links via **GitHub Issues only** (code contributions and Pull Requests are not accepted). We do not host copyrighted third-party document scans; please link directly to the official repository viewer (LAC, Heritage Canadiana, ANOM, BAnQ, HBCA, Internet Archive, Peel, etc.). Verified contributions are credited on the cipher timeline and leaderboard within **1 to 2 weeks**.
+
+  - type: input
+    id: title
+    attributes:
+      label: Plain-English title
+      placeholder: "1917 Halifax coded Admiralty wire"
+    validations:
+      required: true
+
+  - type: input
+    id: date_place
+    attributes:
+      label: Date, sender, recipient, and route/location
+      placeholder: "7 December 1917 · Halifax, N.S. to Ottawa, ON"
+    validations:
+      required: true
+
+  - type: input
+    id: archive_url
+    attributes:
+      label: Official archive URL & shelfmark
+      description: "Direct public link to the official holding archive page plus fonds/reel/folio reference."
+      placeholder: "https://heritage.canadiana.ca/view/... (LAC RG 24, Reel ...)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: raw_ciphertext
+    attributes:
+      label: Exact transcribed raw ciphertext
+      description: "Transcribe the coded text faithfully from the original image or print source."
+    validations:
+      required: true
+
+  - type: textarea
+    id: decoded_optional
+    attributes:
+      label: Decoded plaintext & key (leave blank if still unsolved!)
+      description: "If you also solved it, include the plaintext, key, and proof. Unsolved archival ciphers are very welcome too!"
+
+  - type: input
+    id: credit_name
+    attributes:
+      label: How you want to be credited
+      placeholder: "Jane Doe (@janedoe) · Affiliation (optional)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: llm_json
+    attributes:
+      label: Optional machine-readable JSON block (for LLMs & scripts)
+      render: json

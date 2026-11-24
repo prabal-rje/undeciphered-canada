@@ -1,0 +1,34 @@
+name: "Fix a Transcription, Citation, or Historical Note"
+description: "Report a transcription correction, prior published reading, better archive link, or historical context update (Issues only; no code PRs)."
+title: "[Correction] <cipher-id>: <short summary>"
+labels: ["correction", "community-credit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Spotted a garbled word, an earlier published translation by another historian, or a better archival reference? Thank you!
+        **Policy:** Submit corrections and source citations via **GitHub Issues only** (code contributions and Pull Requests are not accepted). Verified improvements are credited on the cipher's timeline and leaderboard within **1 to 2 weeks**.
+
+  - type: input
+    id: cipher_id
+    attributes:
+      label: Cipher ID or URL
+      placeholder: "meighen-1921-dec2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction_details
+    attributes:
+      label: Proposed fix & primary source citation
+      description: "Explain what should change and cite the exact page, folio, or published work."
+    validations:
+      required: true
+
+  - type: input
+    id: credit_name
+    attributes:
+      label: How you want to be credited
+      placeholder: "Jane Doe (@janedoe)"
+    validations:
+      required: true

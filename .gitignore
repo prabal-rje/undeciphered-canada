@@ -1,0 +1,5 @@
+.DS_Store
+screenshots/
+*.log
+verify_*.py
+__pycache__/

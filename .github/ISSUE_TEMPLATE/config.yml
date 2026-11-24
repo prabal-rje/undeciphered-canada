@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Rights-Holder, Archival Citation-Update, or Takedown Request"
+    url: https://forms.gle/sVLyuxxeRfyYd8tR8
+    about: "Strictly for archives and rights holders requesting a citation update or excerpt removal. All cipher solves, new ciphers, and corrections must use the GitHub Issue forms above."
+  - name: "Undeciphered.ca Contribute Hub & Leaderboard"
+    url: https://undeciphered.ca/contribute/
+    about: "View open unsolved Canadian ciphers, leaderboard standings, and LLM submission schema (Issues only; code PRs are not accepted)."

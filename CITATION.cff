@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Undeciphered.ca: Canadian Historical Ciphers Archive (1673-1945)"
+message: "If you cite or build upon decodings, transcriptions, or archival notes from Undeciphered.ca, please cite this project as below and verify every reading against its linked holding archive."
+type: dataset
+authors:
+  - family-names: Gupta
+    given-names: Prabal
+url: "https://undeciphered.ca"
+repository-code: "https://github.com/prabal-rje/undeciphered-canada"
+license: CC-BY-4.0
+date-released: "2026-11-24"
+keywords:
+  - canadian-history
+  - historical-cryptography
+  - ciphers
+  - slater-telegraphic-code
+  - archives
+  - new-france
+  - confederation
+  - world-war-one
+  - world-war-two
+abstract: "An independent, non-commercial archive indexing 858 raw historical Canadian coded letters, telegrams, and wartime intercepts (1673-1945), including 853 solved dispatches and 218 first modern readings, alongside an opt-in reference catalog of 2,035 published historical cipher summaries."

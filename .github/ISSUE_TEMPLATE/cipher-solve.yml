@@ -1,0 +1,77 @@
+name: "Submit a Cipher Solve or Partial Decode"
+description: "Claim credit for solving an unsolved Canadian cipher or improving a partial reading (credited within 1 to 2 weeks after verification)."
+title: "[Solve] <cipher-id>: <short summary>"
+labels: ["cipher-solve", "community-credit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping unlock Canadian history on **Undeciphered.ca**!
+        Please submit **raw ciphertexts, verified keys, and decoded readings via GitHub Issues only** (code contributions and Pull Requests are not accepted). Every submission is verified by hand against the official archive. Once verified, your name, handle, and percentage solved are credited on the cipher's timeline and on the [Contribute & Leaderboard](https://undeciphered.ca/contribute/) page within **1 to 2 weeks**.
+
+  - type: input
+    id: cipher_id
+    attributes:
+      label: Cipher ID or URL
+      description: "The slug from undeciphered.ca/ciphers/<id>/ (for example: robertson-mcdonald-1819-mar04, oliver-1908)."
+      placeholder: "robertson-mcdonald-1819-mar04"
+    validations:
+      required: true
+
+  - type: textarea
+    id: raw_ciphertext
+    attributes:
+      label: Raw ciphertext being solved (or corrected transcription)
+      description: "Include the exact coded text you decoded so reviewers can reproduce your steps deterministically."
+    validations:
+      required: true
+
+  - type: input
+    id: pct_solved
+    attributes:
+      label: Percentage solved (0-100%)
+      description: "How much of the coded message is now deterministically decoded (e.g. 45%, 100%)."
+      placeholder: "100%"
+    validations:
+      required: true
+
+  - type: textarea
+    id: method_key
+    attributes:
+      label: Cipher system, key, and exact decoding steps
+      description: "State the exact codebook/edition, shift or key, and deterministic steps so another researcher can reproduce your result."
+      placeholder: "Slater's Telegraphic Code (1870), constant shift +310..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: plaintext
+    attributes:
+      label: Decoded plaintext (and uncertain words in brackets)
+      description: "Provide the decoded reading. Mark any uncertain words in [brackets]; never guess."
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification_proof
+    attributes:
+      label: Archive verification & cross-checks
+      description: "Cite the official repository URL, shelfmark (e.g. HBCA B.39/b/1, f. 20v), folio/page, and any historical cross-checks."
+    validations:
+      required: true
+
+  - type: input
+    id: credit_name
+    attributes:
+      label: How you want to be credited
+      description: "Your preferred name, optional GitHub handle or personal/academic URL, and whether an LLM assisted."
+      placeholder: "Jane Doe (@janedoe) · Independent researcher"
+    validations:
+      required: true
+
+  - type: textarea
+    id: llm_json
+    attributes:
+      label: Optional machine-readable JSON block (for LLMs & scripts)
+      description: "Optional structured JSON matching the Undeciphered.ca schema in CONTRIBUTING.md."
+      render: json

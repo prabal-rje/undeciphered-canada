@@ -1,0 +1,21 @@
+{
+  "name": "Undeciphered.ca",
+  "short_name": "Undeciphered",
+  "description": "Charting Canada's history through its ciphers: 858 real coded letters and telegrams from 1673 to 1945.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F17",
+  "theme_color": "#0B0F17",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

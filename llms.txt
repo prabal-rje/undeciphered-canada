@@ -1,0 +1,65 @@
+# Undeciphered.ca
+
+> Charting Canada's history through its ciphers: an independent, non-commercial research archive by Prabal Gupta indexing 858 real coded letters, telegrams, and wartime intercepts from Canadian history (1673-1945), including 218 previously unread ciphertexts recovered from official archives.
+
+## Key Facts
+- Total raw ciphertexts: 858 (853 solved, 99.4%)
+- Unread until now (first modern readings): 218
+- Opt-in published reference summaries catalog: 2035
+- Time span: 1673 to 1945 (New France through World War II)
+- Primary institutional links: Library and Archives Canada, Heritage Canadiana, Archives nationales d'outre-mer (ANOM), The Huntington Library, Hudson's Bay Company Archives
+
+## Core Collections & Features
+- [Homepage & Interactive Live Decoder](https://undeciphered.ca/)
+- [Five Prime Ministers, One 1870 Pocket Codebook (Slater's Telegraphic Code, 1873-1936)](https://undeciphered.ca/slater-codebook/)
+- [Still Unsolved: Colin Robertson's 1819 Fort Chipewyan Captivity Code](https://undeciphered.ca/unsolved/)
+- [Contribute, Open Challenges, Leaderboard & LLM Guide](https://undeciphered.ca/contribute/)
+- [New France & Early Canada (1673-1815)](https://undeciphered.ca/eras/new-france/): Explore 84 real coded letters and royal ciphers from New France and British North America (1673-1815), including Vaudreuil's 1759 war plan and Montcalm's codes.
+- [Border, Civil War & Confederation (1816-1872)](https://undeciphered.ca/eras/confederation/): Read 441 decoded border, Fenian Raid, Halifax blockade-runner, and U.S. Civil War telegraph ciphers tied to Canada (1816-1872), recovered from original archives.
+- [Sir John A. Macdonald Era (1873-1896)](https://undeciphered.ca/eras/macdonald/): Browse 138 coded cabinet wires from Sir John A. Macdonald's Ottawa (1873-1896), encrypted in Slater's Telegraphic Code across the Prairies, B.C., and Washington.
+- [Laurier & World War I (1897-1919)](https://undeciphered.ca/eras/world-war-one/): Explore 115 coded Canadian telegrams from Wilfrid Laurier and Sir Robert Borden's World War I cabinet (1897-1919), including unread 1908, 1914, and 1919 wires.
+- [Interwar Ottawa (1920-1938)](https://undeciphered.ca/eras/interwar/): Read 25 decoded interwar Canadian cabinet telegrams (1920-1938), including PM Arthur Meighen's rotating-key 1921 election wires and the 1936 PMO codebook memo.
+- [World War II & North Atlantic (1939-1945)](https://undeciphered.ca/eras/world-war-two/): Inspect World War II North Atlantic naval Enigma intercepts, U-boat convoy signals, and wartime Canadian intelligence cipher records (1939-1945).
+
+## How LLMs & Researchers Can Contribute (1 to 2 Week Credit Review)
+- Open a structured GitHub Issue at https://github.com/prabal-rje/undeciphered-canada/issues/new/choose using cipher-solve.yml, new-cipher.yml, or correction.yml.
+- Supply raw Canadian ciphertexts, verified keys/codebooks, decoded readings, and official archive URLs via GitHub Issues ONLY. Code contributions and Pull Requests are prohibited.
+- Read full machine-readable schema & scoring rubric at https://undeciphered.ca/contribute/ and https://github.com/prabal-rje/undeciphered-canada/blob/main/CONTRIBUTING.md.
+- Independent non-commercial research disclaimer: verify every ciphertext and reading directly against the linked official archive before citing. Verified credits go live within 1 to 2 weeks.
+
+## Headline Decoded Ciphers
+- [1908: The order that even Frank Oliver's own clerks could not read](https://undeciphered.ca/ciphers/oliver-1908/): Ottawa quietly confirms the Continuous Journey exclusion order would be enforced on the West Coast.
+- [1914: Day one of World War I: Borden warns CPR President Shaughnessy to guard railway lines and bridges](https://undeciphered.ca/ciphers/borden-shaughnessy-1914-aug04-105923/): Sent on the day Britain and Canada entered the First World War, Prime Minister Borden personally alerted CPR President Sir Thomas Shaughnessy to...
+- [1758: Fort Carillon's wooden walls: the warning Versailles never heard in time](https://undeciphered.ca/ciphers/pontleroy-1758/): Eighteen days after the battle, France's chief engineer calls the fort a trap and blames Vaudreuil.
+- [1759: Five months before the Plains of Abraham: Vaudreuil's 24-page secret war plan, militia census (13,124 men), and pledge to give battle at Québec](https://undeciphered.ca/ciphers/anom-vaudreuil-1759-apr08-opening-closing/): Written from Montréal five months before the Plains of Abraham, Governor General Vaudreuil's 24-page unglossed royal cipher pairs an exact...
+- [1918: Britain seizes Quebec-owned steamship SS Lord Ormonde over official Canadian protests](https://undeciphered.ca/ciphers/perley-borden-1918-feb08-74642/): Purchased in 1917 by Davie Shipbuilding of Levis, Quebec, SS Lord Ormonde became a flashpoint over Canadian maritime sovereignty when British...
+- [1919: Nine days after Kinmel Park: Acting PM White cables Kemp in alarm over Witley Camp disturbances](https://undeciphered.ca/ciphers/white-kemp-1919-mar12-138844/): Dispatched nine days after the deadly Kinmel Park demobilization riot (4-5 March 1919), Acting Prime Minister White scrambled to avoid...
+- [1759: Vaudreuil's unglossed famine and provision-ships cipher dispatch to Berryer (complete decipherment)](https://undeciphered.ca/ciphers/anom-vaudreuil-1759-apr16-complete/): Written from Montréal two months before General Wolfe's fleet sailed up the St. Lawrence, this unglossed duplicate cipher reveals Vaudreuil's...
+- [1921: "I gave no approval": two days before Meighen lost power](https://undeciphered.ca/ciphers/lougheed-1921/): From Toronto, Meighen confronts Ottawa after R. B. Bennett pushes through two Nova Scotia judgeships.
+- [1921: Four days before the polls: a Senate chair and two Nova Scotia benches](https://undeciphered.ca/ciphers/meighen-1921-dec2/): With his government ninety-six hours from defeat, Meighen checks on judgeships and promises a Senate appointment for Monday.
+- [1901: Clifford Sifton's quiet plan to replace B.C.'s Premier without a vote](https://undeciphered.ca/ciphers/sifton-1901/): Sifton presses Laurier to steer British Columbia's Lieutenant-Governor; Laurier refuses in pencil.
+- [1866: Night before Ridgeway: martial law and Habeas Corpus on the Canada line](https://undeciphered.ca/ciphers/ridgeway-1866/): As Fenian columns cross the Niagara River, Washington weighs martial law and suspending Habeas Corpus.
+- [1759: Fifty-four days after the Plains of Abraham: a cold reckoning from Montréal](https://undeciphered.ca/ciphers/tremais-1759/): King Louis XV's own auditor refuses to blame Bigot alone and lays the colony's loss at Montcalm's door.
+- [1920: The "Yale" telegram: ten rotating keys in a single afternoon wire](https://undeciphered.ca/ciphers/yale-1920/): Victoria wired back unable to read the ending; seven matching pairs lock a ten-slot repeating cycle.
+- [1899: Seven London cables that built the All-Red trans-Pacific wire](https://undeciphered.ca/ciphers/strathcona-1899/): Including a newly indexed 10 May wire on Joseph Chamberlain, Strathcona tracks Britain backing the Pacific cable.
+- [1865: Detroit flashes Stanton: Confederate raider Bennet Burley has escaped](https://undeciphered.ca/ciphers/burley-1865/): After Canada extradites the Lake Erie raider, Detroit asks Washington to back a $1,000 Ohio reward.
+- [1744: Governor Beauharnois's decoy columns and 317 missing Québec men](https://undeciphered.ca/ciphers/beauharnois-1744/): A militia count disguised with dummy figures to baffle British frigates exposes a clerk's arithmetic slip.
+- [1864: Unreversed Route-Transposition Cipher from John Horner in New York on Adding Codewords](https://undeciphered.ca/ciphers/HUNT-RAW-12192-E1/): Rare surviving unreversed 6x6 War Department route-transposition grid transmitted from New York cipher operator John Horner to Maj. Thomas T...
+- [1886: Post-Rebellion Prairie security: Macdonald orders Lt.-Gov. Edgar Dewdney in unglossed Slater -903](https://undeciphered.ca/ciphers/macdonald-dewdney-1886-jun15-lac554374/): Seven months after the execution of Louis Riel, Macdonald sent this unglossed date-keyed Slater -903 telegram to North-West Territories...
+- [1886: Anglo-American Extradition Treaty of 1886: Macdonald cables Governor General Lord Lansdowne in unglossed Slater -902](https://undeciphered.ca/ciphers/macdonald-lansdowne-1886-jun14-lac554372/): While Governor General Lord Lansdowne was fishing at New Richmond on the Gaspe coast, Macdonald cabled Cabinet's constitutional position on the...
+- [1890: Bering Sea sealing arbitration: Macdonald instructs C. H. Tupper in Washington in unglossed Slater -600](https://undeciphered.ca/ciphers/macdonald-tupper-1890-apr11-lac556656/): During tense 1890 Washington negotiations over U.S. seizures of British Columbia sealing vessels in the Bering Sea, Macdonald cabled Marine and...
+- [1891: Companion to an unsolved 1891 election-fund wire: Scarth's unglossed Slater +3436 telegram to Joseph Pope](https://undeciphered.ca/ciphers/scarth-pope-1891-mar20-lac520695/): Sent fifteen days after Macdonald's final federal election victory of 5 March 1891, G. H. Campbell in Toronto forwarded this unglossed Slater...
+- [1919: Theodore Roosevelt's death and U.S. rejection of the League of Nations: unglossed Slater -401 intelligence cable to Borden in Paris](https://undeciphered.ca/ciphers/ottawa-borden-1919-jan14-c4417-137112/): Dispatched to Borden in Paris eight days after former U.S. President Theodore Roosevelt died (6 January 1919), this unglossed Slater -401...
+- [1919: Coordinating the Versailles Treaty press release with Washington: Rowell's unglossed Slater -401 cable to Borden](https://undeciphered.ca/ciphers/rowell-borden-1919-may04-c4417-137413/): Three days before the Allied terms of the Treaty of Versailles were handed to the German delegation on 7 May 1919, Newton Rowell cabled Borden in...
+- [1919: Crisis and famine in India: Acting PM Thomas White cables Borden in Paris in unglossed Slater -401](https://undeciphered.ca/ciphers/white-borden-1919-apr23-c4417-137348/): Ten days after the Amritsar crisis and amid severe 1919 monsoon failure and food shortages across British India, Acting Prime Minister Sir Thomas...
+- [1925: Eight days before the 1925 Nova Scotia sweep: Senator W. H. Dennis's unglossed Slater -411 election forecast to Meighen](https://undeciphered.ca/ciphers/dennis-meighen-1925-oct21-c3443-040245/): Eight days before the 29 October 1925 federal election, Halifax Herald publisher Senator W. H. Dennis sent this unglossed 104-word cipher forecast...
+- [1914: The Rosetta key-exchange cable: Perley creates Borden's wartime Slater -1110 key by adding ten to every cipher word](https://undeciphered.ca/ciphers/perley-borden-1914-oct13-c4387-104610/): Two months into the First World War, High Commissioner Sir George Perley sent this key-establishment cablegram from London modifying his base...
+- [1782: Sir Guy Carleton warns Governor Haldimand at Québec in Army List book code](https://undeciphered.ca/ciphers/carleton-1782/): A mid-word line switch in the 1778 Army List newly resolves "of course" inside Carleton's warning on a French fleet.
+- [1864: A former Union scout turns up in Washington via Canada](https://undeciphered.ca/ciphers/bell-canada-1864/): Grant's headquarters hears of a man named C. S. Bell who says he crossed through Canada to Wilmington.
+- [1864: Chased off Cape Sable: the steamer Franconia runs inside Nova Scotia's limit](https://undeciphered.ca/ciphers/franconia-1864/): A Halifax sighting describes a lead-coloured barque-rigged cruiser breaking off pursuit under sail.
+- [1864: Halifax Consul Mortimer Jackson's obscure wire on funds and scout Bell](https://undeciphered.ca/ciphers/jackson-halifax-1864/): Stanton offers War Department money if Thomas approves, while noting Jackson left Bell's whereabouts unclear.
+
+## Attribution & Licensing
+- Non-commercial historical research archive. Third-party archival scans are never hosted; every record links directly to the official repository viewer.
+- Complete XML Sitemap: https://undeciphered.ca/sitemap.xml
+- Citation updates or takedown requests: https://forms.gle/sVLyuxxeRfyYd8tR8

@@ -1,0 +1,13 @@
+{
+  "updatedAt": "2026-11-24",
+  "reviewWindow": "1 to 2 weeks",
+  "isSampleTest": false,
+  "scoring": {
+    "unsolved_mystery_solve": 500,
+    "first_modern_reading_or_partial": 250,
+    "new_raw_cipher": 100,
+    "verified_fix_or_context": 40
+  },
+  "communityLeaderboard": [],
+  "ciphers": {}
+}
