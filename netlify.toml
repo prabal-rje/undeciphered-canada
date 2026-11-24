@@ -36,7 +36,25 @@
     Cache-Control = "public, max-age=600"
 
 [[headers]]
+  for = "/feed.xml"
+  [headers.values]
+    Content-Type = "application/atom+xml; charset=utf-8"
+    Cache-Control = "public, max-age=600"
+
+[[headers]]
   for = "/llms.txt"
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
     Cache-Control = "public, max-age=600"
+
+[[headers]]
+  for = "/llms-full.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=600"
+
+[[headers]]
+  for = "/7c4e9b2a8f104d6e93b5a1c8e20f47d9.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=86400"

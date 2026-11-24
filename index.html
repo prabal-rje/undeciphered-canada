@@ -16,6 +16,8 @@
   <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
+  <link rel="alternate" type="application/atom+xml" title="Undeciphered.ca Dispatches" href="/feed.xml" />
+  <link rel="alternate" type="text/plain" title="LLMs.txt Archive Index" href="/llms.txt" />
   <link rel="preload" as="image" href="assets/plate_1908_vancouver.jpg" />
   <meta property="og:site_name" content="Undeciphered.ca" />
   <meta property="og:locale" content="en_CA" />
@@ -58,7 +60,11 @@
         "@type": "Person",
         "@id": "https://undeciphered.ca/#author",
         "name": "Prabal Gupta",
-        "url": "https://undeciphered.ca/"
+        "url": "https://undeciphered.ca/",
+        "sameAs": [
+          "https://github.com/prabal-rje",
+          "https://github.com/prabal-rje/undeciphered-canada"
+        ]
       },
       {
         "@type": "Dataset",
@@ -66,6 +72,8 @@
         "name": "Undeciphered.ca Canadian Historical Cipher Corpus (1673-1945)",
         "description": "An independent, non-commercial research archive of 859 genuine raw coded letters, telegrams, and wartime intercepts from Canadian history (1673-1945), including 219 previously unread ciphertexts recovered from Library and Archives Canada, Archives nationales d'outre-mer, and The Huntington Library, plus 2,035 indexed reference summaries.",
         "url": "https://undeciphered.ca/",
+        "sameAs": "https://github.com/prabal-rje/undeciphered-canada",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
         "inLanguage": ["en-CA", "fr-CA"],
         "isAccessibleForFree": true,
         "temporalCoverage": "1673/1945",
@@ -74,6 +82,18 @@
           "name": "Canada"
         },
         "creator": { "@id": "https://undeciphered.ca/#author" },
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "text/markdown",
+            "contentUrl": "https://undeciphered.ca/llms-full.txt"
+          },
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "application/xml",
+            "contentUrl": "https://undeciphered.ca/sitemap.xml"
+          }
+        ],
         "keywords": [
           "Canadian history",
           "historical ciphers",
@@ -81,7 +101,9 @@
           "New France cryptography",
           "World War I Canadian telegrams",
           "World War II North Atlantic ciphers",
-          "Library and Archives Canada"
+          "Library and Archives Canada",
+          "Colin Robertson 1819 cipher",
+          "Paul Kovach FBI 1942 cipher"
         ]
       },
       {
@@ -109,7 +131,23 @@
             "name": "Are any Canadian historical ciphers still unsolved?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. The most famous open challenge is Hudson's Bay Company officer Colin Robertson's 1819 captivity cipher, smuggled out of a locked cabin at Fort Chipewyan in northern Alberta during the fur-trade wars. Its cipher table survives at the Hudson's Bay Company Archives and remains unbroken."
+              "text": "Yes. The most famous open challenge is Hudson's Bay Company officer Colin Robertson's 1819 captivity cipher, smuggled out of a locked cabin at Fort Chipewyan in northern Alberta during the fur-trade wars. Its cipher table survives at the Hudson's Bay Company Archives (HBCA B.39/b/1, f. 20v) and remains unbroken."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What was the 1942 Hamilton cipher letter sent to J. Edgar Hoover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On April 10, 1942, Paul Kovach of 244 James Street North, Hamilton, Ontario mailed a two-page handwritten numeric cipher to FBI Director J. Edgar Hoover (FBI File 80-612-73). Hoover declined to analyze it due to wartime FBI Technical Laboratory workload. Decoded 84 years later on Undeciphered.ca, it proved to be a structured numeric substitution job application asking Hoover to train him as a detective."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can historians, readers, or AI agents contribute Canadian ciphers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Anyone can submit newly found Canadian archival ciphertexts, verified keys, solves, or transcription corrections via GitHub Issues at github.com/prabal-rje/undeciphered-canada using the structured template and JSON schema on undeciphered.ca/contribute/. Verified contributions are credited on the cipher's timeline within 1 to 2 weeks."
             }
           },
           {
@@ -117,7 +155,7 @@
             "name": "Can I inspect the original historical archive documents?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Undeciphered.ca does not host third-party scans; every entry links directly to the official document viewer at Library and Archives Canada, Heritage Canadiana, Archives nationales d'outre-mer (ANOM), The Huntington Library, or the Hudson's Bay Company Archives."
+              "text": "Yes. Undeciphered.ca does not host third-party scans; every entry links directly to the official document viewer at Library and Archives Canada, Heritage Canadiana, Archives nationales d'outre-mer (ANOM), The Huntington Library, the Hudson's Bay Company Archives, or Internet Archive."
             }
           }
         ]
