@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Undeciphered.ca · Charting Canada's History Through Its Ciphers</title>
-  <meta name="description" content="Charting Canada's history through its ciphers: 854 decoded letters and telegrams from 1673 to 1945, including 219 unread until now. Crack one live." />
+  <meta name="description" content="Charting Canada's history through its ciphers: secret letters, cabinet telegrams, and wartime codes from Canadian archives (1673 to 1945). Step inside and read what they hid." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="author" content="Prabal Gupta" />
   <meta name="keywords" content="Canadian ciphers, historical cryptography Canada, Undeciphered.ca, Slater Telegraphic Code, Library and Archives Canada, New France ciphers, World War I Canadian telegrams, World War II Canadian ciphers, Colin Robertson 1819 cipher, Frank Oliver 1908 cipher, Arthur Meighen cipher" />
@@ -20,18 +20,18 @@
   <meta property="og:site_name" content="Undeciphered.ca" />
   <meta property="og:locale" content="en_CA" />
   <meta property="og:title" content="Undeciphered.ca · Charting Canada's History Through Its Ciphers" />
-  <meta property="og:description" content="854 decoded letters and telegrams from Canadian history (1673-1945), including 219 never read until now. Tap to unlock a real secret message live." />
+  <meta property="og:description" content="Secret letters, cabinet telegrams, and wartime codes from Canadian archives (1673-1945). Step inside and read what they hid." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://undeciphered.ca/" />
-  <meta property="og:image" content="https://undeciphered.ca/assets/og-card.jpg" />
+  <meta property="og:image" content="https://undeciphered.ca/assets/og-card-v2.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Undeciphered.ca: Charting Canada's history through its ciphers" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Undeciphered.ca · Charting Canada's History Through Its Ciphers" />
-  <meta name="twitter:description" content="854 decoded letters and telegrams from Canadian history, including 219 unread until now. Crack one live." />
-  <meta name="twitter:image" content="https://undeciphered.ca/assets/og-card.jpg" />
+  <meta name="twitter:description" content="Secret letters, cabinet telegrams, and wartime codes from Canadian archives (1673-1945). Read what they hid." />
+  <meta name="twitter:image" content="https://undeciphered.ca/assets/og-card-v2.jpg" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -3474,7 +3474,7 @@
         <div class="hero-intro">
           <h1 id="heroHeading" class="hero-h1">Charting Canada's history through its <span class="nowrap"><span id="heroCipherWord" class="cipher-morph" title="Click to replay decode animation" aria-label="ciphers">ciphers</span><span class="cipher-morph-dot">.</span></span></h1>
           <p class="hero-sub">
-            <strong id="heroSolvedCount">854</strong> real coded letters and telegrams from <span id="heroSpan">1673 to 1945</span>, including <strong id="heroFirstCount">219</strong> never read until now. Tap below to crack one live.
+            <strong id="heroSolvedCount">854</strong> real coded letters and telegrams from <span id="heroSpan">1673 to 1945</span>, including <strong id="heroFirstCount">219</strong> never read until now. Open a dispatch below to read what they hid.
           </p>
         </div>
 
@@ -5654,37 +5654,35 @@
     const shareCanvas = $('#shareCardCanvas');
 
     function getSharePayload(item) {
-      const rawSolved = META.rawSolvedCount || RAW_DISPATCHES.length;
-      const firstCt = META.firstModernReadings || 219;
       if (!item) {
         return {
           isSite: true,
           id: 'site',
-          eyebrow: 'CANADIAN HISTORICAL CIPHERS · 1673-1945',
+          eyebrow: 'CANADIAN ARCHIVES · 1673-1945',
           title: "Charting Canada's history through its ciphers.",
           codeLine: '',
-          plainLine: `${fmtNum(rawSolved)} real coded letters and telegrams decoded from official archives, including ${fmtNum(firstCt)} unread until now.`,
-          footerStat: `${fmtNum(rawSolved)} decoded · ${fmtNum(firstCt)} unread until now · 1673-1945`,
+          plainLine: '',
+          footerStat: 'undeciphered.ca',
+          ctaLabel: 'Read what they hid →',
           shareTitle: "Undeciphered.ca: Charting Canada's history through its ciphers",
-          shareText: `Charting Canada's history through its ciphers: ${fmtNum(rawSolved)} coded letters and telegrams from 1673 to 1945, including ${fmtNum(firstCt)} unread until now. Crack one live:`,
+          shareText: "Charting Canada's history through its ciphers. Read what Canadian leaders, spies, and soldiers hid in code:",
           url: `${CANONICAL_ORIGIN}/`
         };
       }
-      const cleanCode = String(item.cipherText || '').replace(/\s+/g, ' ').trim();
       const cleanPlain = String(item.plainText || item.shortLine || item.context || '').replace(/\s+/g, ' ').trim();
-      const snippetPlain = cleanPlain.length > 155 ? cleanPlain.slice(0, 152).replace(/\s+\S*$/, '') + '...' : cleanPlain;
-      const snippetCode = cleanCode.length > 78 ? cleanCode.slice(0, 75).replace(/\s+\S*$/, '') + '...' : cleanCode;
+      const snippetPlain = cleanPlain.length > 148 ? cleanPlain.slice(0, 145).replace(/\s+\S*$/, '') + '...' : cleanPlain;
       const badge = item.discoveryStatus === 'first_modern_reading' ? ' · UNREAD UNTIL NOW' : '';
       return {
         isSite: false,
         id: item.id,
         eyebrow: `${String(item.date || item.year || '').toUpperCase()}${badge}`,
         title: item.title || 'Decoded Canadian Cipher',
-        codeLine: snippetCode || '',
+        codeLine: '',
         plainLine: snippetPlain,
         footerStat: `undeciphered.ca · ${item.routeLabel || item.eraName || 'Canadian Archive'}`,
+        ctaLabel: 'Read dispatch →',
         shareTitle: `${item.year}: ${item.title} · Undeciphered.ca`,
-        shareText: `Decoded ${item.year} Canadian cipher on Undeciphered.ca: "${item.title}"`,
+        shareText: `${item.year}: "${item.title}" on Undeciphered.ca`,
         url: item._isRef
           ? `${CANONICAL_ORIGIN}/?cipher=${encodeURIComponent(item.id)}`
           : `${CANONICAL_ORIGIN}/ciphers/${encodeURIComponent(item.id)}/`
@@ -5755,133 +5753,161 @@
       ctx.closePath();
     }
 
+    const shareBgCache = {};
+    function getShareHalftoneImg(src, onReady) {
+      if (shareBgCache[src]) {
+        if (shareBgCache[src].complete && shareBgCache[src].naturalWidth > 0) return shareBgCache[src];
+        shareBgCache[src].addEventListener('load', onReady, { once: true });
+        return null;
+      }
+      const img = new Image();
+      img.addEventListener('load', onReady, { once: true });
+      img.src = src;
+      shareBgCache[src] = img;
+      return null;
+    }
+
     function renderShareCardCanvas(payload) {
       const ctx = shareCanvas.getContext('2d');
       const W = 1200;
       const H = 630;
       ctx.clearRect(0, 0, W, H);
 
-      // Rich layered midnight editorial canvas
-      const baseGrad = ctx.createLinearGradient(0, 0, W, H);
-      baseGrad.addColorStop(0, '#090E18');
-      baseGrad.addColorStop(0.55, '#0F182A');
-      baseGrad.addColorStop(1, '#0B111E');
-      ctx.fillStyle = baseGrad;
+      // Rich midnight-obsidian base ground
+      ctx.fillStyle = '#090E19';
       ctx.fillRect(0, 0, W, H);
 
-      // Luminous Canadian northern-lights aurora sweep in upper right & horizon
-      const a1 = ctx.createRadialGradient(980, 70, 30, 920, 120, 560);
-      a1.addColorStop(0, 'rgba(52, 211, 153, 0.28)');
-      a1.addColorStop(0.45, 'rgba(56, 189, 248, 0.16)');
-      a1.addColorStop(1, 'rgba(10, 15, 26, 0)');
-      ctx.fillStyle = a1;
-      ctx.fillRect(0, 0, W, H);
-
-      const a2 = ctx.createRadialGradient(1100, 420, 20, 1040, 400, 460);
-      a2.addColorStop(0, 'rgba(167, 139, 250, 0.22)');
-      a2.addColorStop(0.55, 'rgba(239, 68, 84, 0.14)');
-      a2.addColorStop(1, 'rgba(10, 15, 26, 0)');
-      ctx.fillStyle = a2;
-      ctx.fillRect(0, 0, W, H);
-
-      // Subtle architectural halftone texture fading softly toward right edge
-      ctx.fillStyle = 'rgba(148, 197, 255, 0.08)';
-      for (let gx = 720; gx < W - 28; gx += 18) {
-        for (let gy = 28; gy < H - 28; gy += 18) {
-          const fade = Math.max(0, (gx - 720) / 480);
-          if (fade > 0.12) {
-            ctx.beginPath();
-            ctx.arc(gx, gy, 1.45 * fade, 0, Math.PI * 2);
-            ctx.fill();
-          }
+      // Real Public Domain Canadian heritage photograph with halftone print screen!
+      const bgSrc = (BG_SCENES[state.bgIdx] && BG_SCENES[state.bgIdx].src) || 'assets/bg_banff.jpg';
+      const htImg = getShareHalftoneImg(bgSrc, () => {
+        if (state.sharePayload === payload && !shareOverlay.hidden) renderShareCardCanvas(payload);
+      });
+      if (htImg) {
+        const srcAr = htImg.naturalWidth / htImg.naturalHeight;
+        const dstAr = W / H;
+        let sx = 0, sy = 0, sw = htImg.naturalWidth, sh = htImg.naturalHeight;
+        if (srcAr > dstAr) {
+          sw = htImg.naturalHeight * dstAr;
+          sx = (htImg.naturalWidth - sw) / 2;
+        } else {
+          sh = htImg.naturalWidth / dstAr;
+          sy = (htImg.naturalHeight - sh) * 0.45;
         }
+        ctx.save();
+        // Invert white-ground blue-halftone into luminous blueprint dots on dark obsidian!
+        ctx.filter = 'invert(1) hue-rotate(180deg) saturate(1.55) contrast(1.12)';
+        ctx.globalAlpha = 0.62;
+        ctx.drawImage(htImg, sx, sy, sw, sh, 0, 0, W, H);
+        ctx.restore();
       }
+
+      // Clean directional darkroom scrim on left so headline pops effortlessly while halftone photo shines on right
+      const leftGrad = ctx.createLinearGradient(0, 0, W * 0.85, 0);
+      leftGrad.addColorStop(0, 'rgba(9, 14, 24, 0.88)');
+      leftGrad.addColorStop(0.55, 'rgba(9, 14, 24, 0.56)');
+      leftGrad.addColorStop(1, 'rgba(9, 14, 24, 0.14)');
+      ctx.fillStyle = leftGrad;
+      ctx.fillRect(0, 0, W, H);
+
+      const botGrad = ctx.createLinearGradient(0, H * 0.55, 0, H);
+      botGrad.addColorStop(0, 'rgba(9, 14, 24, 0)');
+      botGrad.addColorStop(1, 'rgba(9, 14, 24, 0.72)');
+      ctx.fillStyle = botGrad;
+      ctx.fillRect(0, 0, W, H);
 
       // Crisp museum frame hairline inset 24px
       drawRoundedRect(ctx, 24, 24, W - 48, H - 48, 18);
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.10)';
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.14)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
 
-      // Top bar: Two-tone Maple Leaf + Undeciphered.ca on left, crisp pill on right
-      drawMapleVector(ctx, 64, 52, 44);
-      ctx.font = '800 34px "Bricolage Grotesque", system-ui, sans-serif';
-      ctx.fillStyle = '#F8FAFC';
-      ctx.fillText('Undeciphered', 120, 86);
+      // Top-left: Two-tone Maple Leaf + Undeciphered.ca
+      drawMapleVector(ctx, 68, 58, 52);
+      ctx.font = '800 38px "Bricolage Grotesque", system-ui, sans-serif';
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillText('Undeciphered', 134, 96);
       const wBrand = ctx.measureText('Undeciphered').width;
       ctx.fillStyle = '#FF6B7B';
-      ctx.fillText('.ca', 120 + wBrand, 86);
+      ctx.fillText('.ca', 134 + wBrand, 96);
 
-      const badgeText = payload.eyebrow.slice(0, 42);
-      ctx.font = '600 15px "IBM Plex Mono", monospace';
-      const badgeW = ctx.measureText(badgeText).width + 32;
-      drawRoundedRect(ctx, W - 64 - badgeW, 56, badgeW, 34, 17);
-      ctx.fillStyle = 'rgba(239, 68, 84, 0.16)';
-      ctx.fill();
-      ctx.strokeStyle = 'rgba(255, 117, 133, 0.42)';
-      ctx.lineWidth = 1;
-      ctx.stroke();
-      ctx.fillStyle = '#FF8E9B';
-      ctx.fillText(badgeText, W - 64 - badgeW + 16, 78);
-
-      // Hero editorial headline
-      const titleSize = payload.title.length > 56 ? 42 : 48;
-      ctx.font = `800 ${titleSize}px "Bricolage Grotesque", system-ui, sans-serif`;
-      ctx.fillStyle = '#FFFFFF';
-      const titleLines = wrapCanvasLines(ctx, payload.title, W - 140, 2);
-      let y = 172;
-      titleLines.forEach((line) => {
-        ctx.fillText(line, 66, y);
-        y += titleSize * 1.15;
-      });
-
-      // Dramatic scarlet-bar editorial pull-quote (zero empty black void box!)
-      const quoteTop = Math.max(y + 18, 286);
-      const quoteLeft = 96;
-      const quoteMaxW = W - 166;
-      let qy = quoteTop + 8;
-
-      if (payload.codeLine) {
-        ctx.font = '500 20px "IBM Plex Mono", monospace';
-        ctx.fillStyle = '#8BC4FF';
-        const codeLines = wrapCanvasLines(ctx, payload.codeLine, quoteMaxW, 1);
-        ctx.fillText(codeLines[0] || '', quoteLeft, qy + 18);
-        qy += 46;
+      if (!payload.isSite) {
+        const badgeText = payload.eyebrow.slice(0, 42);
+        ctx.font = '600 15px "IBM Plex Mono", monospace';
+        const badgeW = ctx.measureText(badgeText).width + 32;
+        drawRoundedRect(ctx, W - 68 - badgeW, 64, badgeW, 34, 17);
+        ctx.fillStyle = 'rgba(12, 18, 30, 0.76)';
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255, 117, 133, 0.52)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        ctx.fillStyle = '#FFA4B0';
+        ctx.fillText(badgeText, W - 68 - badgeW + 16, 86);
       }
 
-      const plainSize = payload.codeLine ? 31 : 34;
-      ctx.font = `500 ${plainSize}px "Source Serif 4", Georgia, serif`;
-      ctx.fillStyle = '#F8FAFC';
-      const maxPlainLines = payload.codeLine ? 3 : 4;
-      const plainLines = wrapCanvasLines(ctx, `“${payload.plainLine}”`, quoteMaxW, maxPlainLines);
-      plainLines.forEach((ln) => {
-        qy += plainSize * 1.32;
-        ctx.fillText(ln, quoteLeft, qy);
-      });
+      if (payload.isSite) {
+        // Pure, bold, zero-clutter museum poster card (no numbers, no quote box!)
+        const hSize = 74;
+        ctx.font = `800 ${hSize}px "Bricolage Grotesque", system-ui, sans-serif`;
+        const siteLines = ["Charting Canada's", 'history through', 'its ciphers.'];
+        let sy = 258;
+        siteLines.forEach((ln, idx) => {
+          ctx.fillStyle = 'rgba(4, 8, 15, 0.78)';
+          ctx.fillText(ln, 70, sy + 4);
+          if (idx === 2) {
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fillText('its ciphers', 68, sy);
+            const cw = ctx.measureText('its ciphers').width;
+            ctx.fillStyle = '#FF6B7B';
+            ctx.fillText('.', 68 + cw, sy);
+          } else {
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fillText(ln, 68, sy);
+          }
+          sy += 82;
+        });
+      } else {
+        // Individual cipher card: crisp headline + subtle 2-line editorial deck over halftone PD photo
+        const titleSize = payload.title.length > 52 ? 46 : 54;
+        ctx.font = `800 ${titleSize}px "Bricolage Grotesque", system-ui, sans-serif`;
+        const titleLines = wrapCanvasLines(ctx, payload.title, W - 150, 3);
+        let y = 198;
+        titleLines.forEach((line) => {
+          ctx.fillStyle = 'rgba(4, 8, 15, 0.78)';
+          ctx.fillText(line, 70, y + 3);
+          ctx.fillStyle = '#FFFFFF';
+          ctx.fillText(line, 68, y);
+          y += titleSize * 1.18;
+        });
 
-      // Vertical Canadian scarlet accent rule sized tightly to actual quote height
-      const barH = Math.max(88, qy - quoteTop + 12);
-      drawRoundedRect(ctx, 66, quoteTop - 2, 6, barH, 3);
-      ctx.fillStyle = '#EF4454';
-      ctx.fill();
+        if (payload.plainLine) {
+          ctx.font = '500 26px "Source Serif 4", Georgia, serif';
+          ctx.fillStyle = 'rgba(226, 234, 246, 0.94)';
+          const plainLines = wrapCanvasLines(ctx, payload.plainLine, W - 170, 2);
+          let qy = Math.max(y + 28, 412);
+          plainLines.forEach((ln) => {
+            ctx.fillText(ln, 68, qy);
+            qy += 36;
+          });
+        }
+      }
 
-      // Clean bottom editorial footer rule
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
+      // Clean bottom rule + URL + subtle inviting CTA
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.16)';
       ctx.lineWidth = 1;
       ctx.beginPath();
-      ctx.moveTo(64, 540);
-      ctx.lineTo(W - 64, 540);
+      ctx.moveTo(68, 536);
+      ctx.lineTo(W - 68, 536);
       ctx.stroke();
 
-      ctx.font = '500 17px "IBM Plex Mono", monospace';
-      ctx.fillStyle = '#9FB0C7';
-      ctx.fillText(payload.footerStat.slice(0, 68), 66, 580);
+      ctx.font = '500 19px "IBM Plex Mono", monospace';
+      ctx.fillStyle = '#CBD8EC';
+      ctx.fillText(payload.footerStat.slice(0, 68), 68, 578);
 
-      ctx.font = '700 18px "Bricolage Grotesque", system-ui, sans-serif';
-      ctx.fillStyle = '#FFFFFF';
-      const siteTag = 'undeciphered.ca →';
+      ctx.font = '700 19px "Bricolage Grotesque", system-ui, sans-serif';
+      const siteTag = payload.ctaLabel || 'undeciphered.ca →';
       const tagW = ctx.measureText(siteTag).width;
-      ctx.fillText(siteTag, W - 66 - tagW, 580);
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillText(siteTag, W - 68 - tagW, 578);
     }
 
     function openShareModal(item) {
