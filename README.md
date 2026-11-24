@@ -4,7 +4,7 @@
 
 Live site: [https://undeciphered.ca](https://undeciphered.ca)
 
-`Undeciphered.ca` is an independent, non-commercial historical cryptography project maintained by **Prabal Gupta**. It indexes **858** genuine raw coded letters, telegrams, and wartime intercepts from Canadian history (`853` solved, `5` open or provisional challenges, including **218** previously unread archival ciphertexts), plus an opt-in catalog of **2,035** published historical cipher summaries.
+`Undeciphered.ca` is an independent, non-commercial historical cryptography project maintained by **Prabal Gupta**. It indexes **859** genuine raw coded letters, telegrams, and wartime intercepts from Canadian history (`854` solved, `5` open or provisional challenges, including **219** previously unread archival ciphertexts), plus an opt-in catalog of **2,035** published historical cipher summaries.
 
 ## Important Disclaimer for Readers & Researchers
 

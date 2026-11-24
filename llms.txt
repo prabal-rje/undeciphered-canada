@@ -1,10 +1,10 @@
 # Undeciphered.ca
 
-> Charting Canada's history through its ciphers: an independent, non-commercial research archive by Prabal Gupta indexing 858 real coded letters, telegrams, and wartime intercepts from Canadian history (1673-1945), including 218 previously unread ciphertexts recovered from official archives.
+> Charting Canada's history through its ciphers: an independent, non-commercial research archive by Prabal Gupta indexing 859 real coded letters, telegrams, and wartime intercepts from Canadian history (1673-1945), including 219 previously unread ciphertexts recovered from official archives.
 
 ## Key Facts
-- Total raw ciphertexts: 858 (853 solved, 99.4%)
-- Unread until now (first modern readings): 218
+- Total raw ciphertexts: 859 (854 solved, 99.4%)
+- Unread until now (first modern readings): 219
 - Opt-in published reference summaries catalog: 2035
 - Time span: 1673 to 1945 (New France through World War II)
 - Primary institutional links: Library and Archives Canada, Heritage Canadiana, Archives nationales d'outre-mer (ANOM), The Huntington Library, Hudson's Bay Company Archives
@@ -44,7 +44,6 @@
 - [1899: Seven London cables that built the All-Red trans-Pacific wire](https://undeciphered.ca/ciphers/strathcona-1899/): Including a newly indexed 10 May wire on Joseph Chamberlain, Strathcona tracks Britain backing the Pacific cable.
 - [1865: Detroit flashes Stanton: Confederate raider Bennet Burley has escaped](https://undeciphered.ca/ciphers/burley-1865/): After Canada extradites the Lake Erie raider, Detroit asks Washington to back a $1,000 Ohio reward.
 - [1744: Governor Beauharnois's decoy columns and 317 missing Québec men](https://undeciphered.ca/ciphers/beauharnois-1744/): A militia count disguised with dummy figures to baffle British frigates exposes a clerk's arithmetic slip.
-- [1864: Unreversed Route-Transposition Cipher from John Horner in New York on Adding Codewords](https://undeciphered.ca/ciphers/HUNT-RAW-12192-E1/): Rare surviving unreversed 6x6 War Department route-transposition grid transmitted from New York cipher operator John Horner to Maj. Thomas T...
 - [1886: Post-Rebellion Prairie security: Macdonald orders Lt.-Gov. Edgar Dewdney in unglossed Slater -903](https://undeciphered.ca/ciphers/macdonald-dewdney-1886-jun15-lac554374/): Seven months after the execution of Louis Riel, Macdonald sent this unglossed date-keyed Slater -903 telegram to North-West Territories...
 - [1886: Anglo-American Extradition Treaty of 1886: Macdonald cables Governor General Lord Lansdowne in unglossed Slater -902](https://undeciphered.ca/ciphers/macdonald-lansdowne-1886-jun14-lac554372/): While Governor General Lord Lansdowne was fishing at New Richmond on the Gaspe coast, Macdonald cabled Cabinet's constitutional position on the...
 - [1890: Bering Sea sealing arbitration: Macdonald instructs C. H. Tupper in Washington in unglossed Slater -600](https://undeciphered.ca/ciphers/macdonald-tupper-1890-apr11-lac556656/): During tense 1890 Washington negotiations over U.S. seizures of British Columbia sealing vessels in the Bering Sea, Macdonald cabled Marine and...
@@ -58,6 +57,7 @@
 - [1864: A former Union scout turns up in Washington via Canada](https://undeciphered.ca/ciphers/bell-canada-1864/): Grant's headquarters hears of a man named C. S. Bell who says he crossed through Canada to Wilmington.
 - [1864: Chased off Cape Sable: the steamer Franconia runs inside Nova Scotia's limit](https://undeciphered.ca/ciphers/franconia-1864/): A Halifax sighting describes a lead-coloured barque-rigged cruiser breaking off pursuit under sail.
 - [1864: Halifax Consul Mortimer Jackson's obscure wire on funds and scout Bell](https://undeciphered.ca/ciphers/jackson-halifax-1864/): Stanton offers War Department money if Thomas approves, while noting Jackson left Bell's whereabouts unclear.
+- [1864: Watching Alexander Keith Jr.'s Halifax remittance in New York](https://undeciphered.ca/ciphers/keith-remittance-1864/): Stanton alerts New York's postmaster to a second firm name on money mailed from Halifax.
 
 ## Attribution & Licensing
 - Non-commercial historical research archive. Third-party archival scans are never hosted; every record links directly to the official repository viewer.

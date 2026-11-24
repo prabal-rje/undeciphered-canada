@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Undeciphered.ca · Charting Canada's History Through Its Ciphers</title>
-  <meta name="description" content="Charting Canada's history through its ciphers: 853 decoded letters and telegrams from 1673 to 1945, including 218 unread until now. Crack one live." />
+  <meta name="description" content="Charting Canada's history through its ciphers: 854 decoded letters and telegrams from 1673 to 1945, including 219 unread until now. Crack one live." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="author" content="Prabal Gupta" />
   <meta name="keywords" content="Canadian ciphers, historical cryptography Canada, Undeciphered.ca, Slater Telegraphic Code, Library and Archives Canada, New France ciphers, World War I Canadian telegrams, World War II Canadian ciphers, Colin Robertson 1819 cipher, Frank Oliver 1908 cipher, Arthur Meighen cipher" />
@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Undeciphered.ca" />
   <meta property="og:locale" content="en_CA" />
   <meta property="og:title" content="Undeciphered.ca · Charting Canada's History Through Its Ciphers" />
-  <meta property="og:description" content="853 decoded letters and telegrams from Canadian history (1673-1945), including 218 never read until now. Tap to unlock a real secret message live." />
+  <meta property="og:description" content="854 decoded letters and telegrams from Canadian history (1673-1945), including 219 never read until now. Tap to unlock a real secret message live." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://undeciphered.ca/" />
   <meta property="og:image" content="https://undeciphered.ca/assets/og-card.jpg" />
@@ -30,7 +30,7 @@
   <meta property="og:image:alt" content="Undeciphered.ca: Charting Canada's history through its ciphers" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Undeciphered.ca · Charting Canada's History Through Its Ciphers" />
-  <meta name="twitter:description" content="853 decoded letters and telegrams from Canadian history, including 218 unread until now. Crack one live." />
+  <meta name="twitter:description" content="854 decoded letters and telegrams from Canadian history, including 219 unread until now. Crack one live." />
   <meta name="twitter:image" content="https://undeciphered.ca/assets/og-card.jpg" />
   <script type="application/ld+json">
   {
@@ -42,7 +42,7 @@
         "url": "https://undeciphered.ca/",
         "name": "Undeciphered.ca",
         "alternateName": "Canadian Historical Ciphers Archive",
-        "description": "Charting Canada's history through its ciphers: 858 real coded letters and telegrams from 1673 to 1945, including 218 previously unread archival messages decoded live.",
+        "description": "Charting Canada's history through its ciphers: 859 real coded letters and telegrams from 1673 to 1945, including 219 previously unread archival messages decoded live.",
         "inLanguage": "en-CA",
         "publisher": { "@id": "https://undeciphered.ca/#author" },
         "potentialAction": {
@@ -64,7 +64,7 @@
         "@type": "Dataset",
         "@id": "https://undeciphered.ca/#dataset",
         "name": "Undeciphered.ca Canadian Historical Cipher Corpus (1673-1945)",
-        "description": "An independent, non-commercial research archive of 858 genuine raw coded letters, telegrams, and wartime intercepts from Canadian history (1673-1945), including 218 previously unread ciphertexts recovered from Library and Archives Canada, Archives nationales d'outre-mer, and The Huntington Library, plus 2,035 indexed reference summaries.",
+        "description": "An independent, non-commercial research archive of 859 genuine raw coded letters, telegrams, and wartime intercepts from Canadian history (1673-1945), including 219 previously unread ciphertexts recovered from Library and Archives Canada, Archives nationales d'outre-mer, and The Huntington Library, plus 2,035 indexed reference summaries.",
         "url": "https://undeciphered.ca/",
         "inLanguage": ["en-CA", "fr-CA"],
         "isAccessibleForFree": true,
@@ -101,7 +101,7 @@
             "name": "How many previously unread Canadian ciphers are decoded on Undeciphered.ca?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Undeciphered.ca indexes 858 genuine raw Canadian historical ciphertexts from 1673 to 1945 (with 853 solved, or 99.4%), including 218 coded letters and telegrams recovered with no earlier published translation on file in the archives."
+              "text": "Undeciphered.ca indexes 859 genuine raw Canadian historical ciphertexts from 1673 to 1945 (with 854 solved, or 99.4%), including 219 coded letters and telegrams recovered with no earlier published translation on file in the archives."
             }
           },
           {
@@ -3474,7 +3474,7 @@
         <div class="hero-intro">
           <h1 id="heroHeading" class="hero-h1">Charting Canada's history through its <span class="nowrap"><span id="heroCipherWord" class="cipher-morph" title="Click to replay decode animation" aria-label="ciphers">ciphers</span><span class="cipher-morph-dot">.</span></span></h1>
           <p class="hero-sub">
-            <strong id="heroSolvedCount">853</strong> real coded letters and telegrams from <span id="heroSpan">1673 to 1945</span>, including <strong id="heroFirstCount">218</strong> never read until now. Tap below to crack one live.
+            <strong id="heroSolvedCount">854</strong> real coded letters and telegrams from <span id="heroSpan">1673 to 1945</span>, including <strong id="heroFirstCount">219</strong> never read until now. Tap below to crack one live.
           </p>
         </div>
 
@@ -3545,7 +3545,7 @@
             <p class="sec-sub">Buried in Canadian archives without a key, now translated back into plain English.</p>
           </div>
           <button id="seeAllNewBtn" class="quiet-link-btn quiet-link-btn--accent" type="button">
-            See all <span id="newCountLink">218</span> newly read →
+            See all <span id="newCountLink">219</span> newly read →
           </button>
         </div>
 
@@ -5401,38 +5401,39 @@
         });
         return { solvedPct: provPct, timeline: steps };
       }
+      const resolvedPct = Number.isFinite(Number(item.solvedPct)) ? Math.max(1, Math.min(100, Number(item.solvedPct))) : 100;
       if (item.discoveryStatus === 'first_modern_reading') {
         steps.push({
           stage: 'solved',
-          label: 'Decoded · 100%',
+          label: `Decoded · ${resolvedPct}%`,
           actor: 'Prabal Gupta',
           handle: '@prabal-rje',
           date: '2026',
-          pct: 100,
+          pct: resolvedPct,
           note: PLAIN_METHOD[item.method] || 'First modern reading recovered from original archival ciphertext.'
         });
       } else if (item.discoveryStatus === 'prior_published_reading') {
         steps.push({
           stage: 'solved',
-          label: 'Published reading · 100%',
+          label: `Published reading · ${resolvedPct}%`,
           actor: item.priorCredit ? item.priorCredit.slice(0, 72) : 'Historical archival edition',
           handle: '',
           date: 'Prior',
-          pct: 100,
+          pct: resolvedPct,
           note: 'Previously published translation indexed with direct archive link and cryptographic verification.'
         });
       } else {
         steps.push({
           stage: 'solved',
-          label: 'Key verified · 100%',
+          label: `Key verified · ${resolvedPct}%`,
           actor: 'Original archive key · Verified by Prabal Gupta',
           handle: '@prabal-rje',
           date: '2026',
-          pct: 100,
+          pct: resolvedPct,
           note: PLAIN_METHOD[item.method] || 'Verified against original archive key or clerk glosses.'
         });
       }
-      return { solvedPct: 100, timeline: steps };
+      return { solvedPct: resolvedPct, timeline: steps };
     }
 
     function buildContributionTimelineHtml(item) {
@@ -5654,7 +5655,7 @@
 
     function getSharePayload(item) {
       const rawSolved = META.rawSolvedCount || RAW_DISPATCHES.length;
-      const firstCt = META.firstModernReadings || 218;
+      const firstCt = META.firstModernReadings || 219;
       if (!item) {
         return {
           isSite: true,
