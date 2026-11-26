@@ -32,6 +32,12 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
+User-agent: Claude-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 User-agent: Applebot-Extended
 Allow: /
 

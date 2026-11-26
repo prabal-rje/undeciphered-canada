@@ -60,8 +60,9 @@
         "@type": "Person",
         "@id": "https://undeciphered.ca/#author",
         "name": "Prabal Gupta",
-        "url": "https://undeciphered.ca/",
+        "url": "https://prabal.ca/",
         "sameAs": [
+          "https://prabal.ca/",
           "https://github.com/prabal-rje",
           "https://github.com/prabal-rje/undeciphered-canada"
         ]
@@ -3780,6 +3781,22 @@
         <a href="/contribute/">Contribute &amp; Leaderboard</a>
       </nav>
 
+      <nav class="footer-era-nav" aria-label="Featured historical dispatches">
+        <span class="footer-era-label">Featured</span>
+        <a href="/ciphers/oliver-1908/">Frank Oliver (1908)</a>
+        <a href="/ciphers/borden-shaughnessy-1914-aug04-105923/">Borden WWI Day One (1914)</a>
+        <a href="/ciphers/pontleroy-1758/">Fort Carillon (1758)</a>
+        <a href="/ciphers/anom-vaudreuil-1759-apr08-opening-closing/">Vaudreuil War Plan (1759)</a>
+        <a href="/ciphers/W7-HUNT-6338-E2/">Alaska Purchase Wire (1867)</a>
+        <a href="/ciphers/ridgeway-1866/">Night Before Ridgeway (1866)</a>
+        <a href="/ciphers/sifton-1901/">Clifford Sifton (1901)</a>
+        <a href="/ciphers/perley-borden-1918-feb08-74642/">SS Lord Ormonde (1918)</a>
+        <a href="/ciphers/white-kemp-1919-mar12-138844/">Witley Camp (1919)</a>
+        <a href="/ciphers/lougheed-1921/">Meighen 1921 Election</a>
+        <a href="/ciphers/kovach-hamilton-fbi-1942-04-10/">Hamilton FBI Cipher (1942)</a>
+        <a href="/ciphers/baker-prevost-1812-aug24/">War of 1812 Warning</a>
+      </nav>
+
       <details id="footerCreditsDrawer" class="footer-disclosure">
         <summary>Sources, rights &amp; 12 public domain archival photographs</summary>
         <div class="footer-drawer-body">
@@ -5567,7 +5584,7 @@
         ${buildArchiveBoxHtml(item.sourceUrl, item.linkLabel, item.creditLine)}
         <p class="wire-note" style="margin:-8px 0 14px;">Independent non-commercial research note: always verify ciphertexts and readings directly against the linked original archive above before citing.</p>
         ${buildContributionTimelineHtml(item)}
-        ${!item._isRef ? `<p class="wire-note" style="margin:0 0 16px;"><a href="ciphers/${encodeURIComponent(item.id)}/">Open standalone page for this cipher →</a></p>` : ''}
+        ${!item._isRef ? `<p class="wire-note" style="margin:0 0 16px;"><a href="/ciphers/${encodeURIComponent(item.id)}/">Open standalone page for this cipher →</a></p>` : ''}
 
         <details class="disclosure">
           <summary>How it was decoded &amp; archive notes</summary>
@@ -5727,7 +5744,7 @@
         shareTitle: `${item.year}: ${item.title} · Undeciphered.ca`,
         shareText: `${item.year}: "${item.title}" on Undeciphered.ca`,
         url: item._isRef
-          ? `${CANONICAL_ORIGIN}/?cipher=${encodeURIComponent(item.id)}`
+          ? `${CANONICAL_ORIGIN}/#cipher=${encodeURIComponent(item.id)}`
           : `${CANONICAL_ORIGIN}/ciphers/${encodeURIComponent(item.id)}/`
       };
     }
