@@ -11,17 +11,39 @@
   "communityLeaderboard": [
     {
       "rank": 1,
+      "slug": "jfedor",
       "name": "Jeff Fedor",
       "handle": "@jfedor",
       "url": "https://github.com/jfedor",
+      "profileUrl": "/contributors/jfedor/",
       "solved": 1,
       "newCiphers": 0,
       "fixes": 1,
       "points": 290,
-      "aiAssisted": true,
-      "aiNote": "ZCode / GLM-5.4",
-      "summary": "Rebuilt 22/33 Cipher Book No. 4 words on W7-HUNT-9204-E2 (25% to 65%) from Huntington ledger twins + verified clerk strikethrough on scan",
-      "issueUrl": "https://github.com/prabal-rje/undeciphered-canada/issues/1"
+      "items": [
+        {
+          "cipherId": "W7-HUNT-9204-E2",
+          "year": "1865",
+          "title": "Cipher Book No. 4 wire to Grant: informant from Thompson and Tucker's Canada circle on Lee-Johnston junction and giving up Richmond (65%)",
+          "type": "solve",
+          "badge": "Breakthrough \u00b7 25% to 65%",
+          "points": 250,
+          "date": "2026-11-26",
+          "issueUrl": "https://github.com/prabal-rje/undeciphered-canada/issues/1",
+          "note": "Rebuilt 22 of 33 War Department Cipher Book No. 4 arbitrary words from Huntington sent/received ledger twins (mssEC 18/19 vs mssEC 12/13) and Stager's key register (mssEC 36, p. [325])."
+        },
+        {
+          "cipherId": "W7-HUNT-9204-E2",
+          "year": "1865",
+          "title": "Cipher Book No. 4 wire to Grant: transcription strikethrough fix (W7-HUNT-9204-E2)",
+          "type": "fix",
+          "badge": "Verified scan fix",
+          "points": 40,
+          "date": "2026-11-26",
+          "issueUrl": "https://github.com/prabal-rje/undeciphered-canada/issues/1",
+          "note": "Verified the clerk's pencil strikethrough on 'joined' on Huntington scan ptr 9204 (page 310, entry 2) and fixed the old '[Hearse]' typo to Richmond (Hoax)."
+        }
+      ]
     }
   ],
   "ciphers": {
@@ -48,12 +70,12 @@
         },
         {
           "stage": "breakthrough",
-          "label": "Breakthrough \u00b7 65% (AI-assisted)",
+          "label": "Breakthrough \u00b7 65%",
           "actor": "Jeff Fedor",
           "handle": "@jfedor",
           "date": "2026-11-26",
           "pct": 65,
-          "note": "Rebuilt 22 of 33 Book No. 4 arbitrary words from Huntington sent/received ledger twins (mssEC 18/19 vs mssEC 12/13; Issue #1, AI-assisted via ZCode / GLM-5.4) and corrected the clerk's pencil strikethrough on 'joined' on scan ptr 9204."
+          "note": "Rebuilt 22 of 33 Book No. 4 arbitrary words from Huntington sent/received ledger twins (mssEC 18/19 vs mssEC 12/13; Issue #1) and corrected the clerk's pencil strikethrough on 'joined' on scan ptr 9204."
         },
         {
           "stage": "open",

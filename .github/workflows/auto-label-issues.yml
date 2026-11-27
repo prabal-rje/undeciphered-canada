@@ -1,0 +1,74 @@
+name: Auto-label community cipher issues
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply allowlisted submission labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const ALLOWED = new Set([
+              "cipher-solve",
+              "new-cipher",
+              "correction",
+              "community-credit",
+            ]);
+
+            const issue = context.payload.issue;
+            if (!issue) return;
+
+            const title = (issue.title || "").toLowerCase();
+            const body = (issue.body || "");
+            const comment = context.payload.comment ? (context.payload.comment.body || "") : "";
+            const toAdd = new Set();
+
+            // 1. Auto-detect from title prefixes or JSON submissionType
+            if (/^\s*\[solve\]/i.test(title) || /"submissionType"\s*:\s*"solve"/i.test(body)) {
+              toAdd.add("cipher-solve");
+              toAdd.add("community-credit");
+            }
+            if (/^\s*\[new\s+cipher\]/i.test(title) || /"submissionType"\s*:\s*"new(-cipher)?"/i.test(body)) {
+              toAdd.add("new-cipher");
+              toAdd.add("community-credit");
+            }
+            if (/^\s*\[correction\]/i.test(title) || /"submissionType"\s*:\s*"correction"/i.test(body)) {
+              toAdd.add("correction");
+              toAdd.add("community-credit");
+            }
+
+            // 2. Allow any contributor (non-collaborators included) to request
+            //    allowlisted labels via `/label ...` or `Labels: ...` in body/comment
+            const text = `${body}\n${comment}`;
+            const tagLines = text.match(/(?:^|\n)\s*(?:\/label|labels\s*:)\s*([^\n]+)/gi) || [];
+            for (const line of tagLines) {
+              const tokens = line.replace(/^.*?(?:\/label|labels\s*:)/i, "").split(/[\s,]+/);
+              for (const raw of tokens) {
+                const tok = raw.trim().toLowerCase().replace(/^`|`$/g, "");
+                if (ALLOWED.has(tok)) toAdd.add(tok);
+              }
+            }
+
+            const existing = new Set((issue.labels || []).map((l) => l.name.toLowerCase()));
+            const missing = [...toAdd].filter((l) => !existing.has(l));
+            if (missing.length === 0) {
+              core.info("No new labels to apply.");
+              return;
+            }
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: missing,
+            });
+            core.info(`Applied labels: ${missing.join(", ")}`);

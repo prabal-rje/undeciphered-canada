@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Libre+Franklin:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/editorial-page.css?v=6" />
+  <link rel="stylesheet" href="/assets/editorial-page.css?v=7" />
   <script>
 (function(){
   try {
@@ -78,7 +78,7 @@
 </nav>
 <p class="kicker">Open Canadian Cryptanalysis · Humans &amp; LLMs Welcome</p>
 <h1>Help crack Canada's hidden history.</h1>
-<p class="context-copy" style="margin-bottom:24px;max-width:66ch;">Undeciphered.ca is an independent, non-commercial Canadian historical cryptography archive. Historians, archivists, hobbyists, and AI-assisted researchers are welcome to contribute <strong>raw Canadian ciphertexts, verified keys, decoding proofs, and archival notes</strong> via GitHub Issues.</p>
+<p class="context-copy" style="margin-bottom:24px;max-width:66ch;">Undeciphered.ca is an independent, non-commercial Canadian historical cryptography archive. Historians, archivists, hobbyists, and independent researchers are welcome to contribute <strong>raw Canadian ciphertexts, verified keys, decoding proofs, and archival notes</strong> via GitHub Issues.</p>
 <div class="notice-banner">
   <strong>Issues Only &amp; Verification (1 to 2 Weeks):</strong> Every submission is checked manually against the official primary archive for deterministic cryptographic proof. Accepted contributors are credited on the cipher's timeline and leaderboard below within <strong>1 to 2 weeks</strong>. Please supply ciphertexts, keys, and archive links via GitHub Issues only; code contributions and Pull Requests are not accepted.
 </div>
@@ -229,21 +229,16 @@
               <tr><th>Rank</th><th>Contributor</th><th style="text-align:right;">Solved</th><th class="lb-hide-sm" style="text-align:right;">New Ciphers</th><th class="lb-hide-sm" style="text-align:right;">Fixes</th><th style="text-align:right;">Points</th></tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="lb-row-link" onclick="window.location.href='/contributors/jfedor/'">
                 <td class="lb-rank">#1</td>
-                <td><span class="lb-name"><a href="https://github.com/jfedor" target="_blank" rel="noopener noreferrer" style="color:var(--ink);">Jeff Fedor</a> <span class="contrib-handle">@jfedor</span></span><span class="lb-sub">Rebuilt 22/33 Cipher Book No. 4 words on <a href="/ciphers/W7-HUNT-9204-E2/">W7-HUNT-9204-E2</a> (25% to 65%) from Huntington ledger twins + verified scan strikethrough (<a href="https://github.com/prabal-rje/undeciphered-canada/issues/1" target="_blank" rel="noopener noreferrer">Issue #1</a>, AI-assisted: ZCode / GLM-5.4)</span></td>
+                <td><a class="lb-person" href="/contributors/jfedor/"><span>Jeff Fedor</span><span class="contrib-handle">@jfedor</span><span class="lb-person-arr" aria-hidden="true">→</span></a></td>
                 <td class="lb-num">1</td><td class="lb-num lb-hide-sm">0</td><td class="lb-num lb-hide-sm">1</td><td class="lb-pts">290</td>
-              </tr>
-              <tr>
-                <td class="lb-rank">#2</td>
-                <td><span class="lb-name">Open Community Spot</span><span class="lb-sub">Crack an open challenge above, add a newly found Canadian archival cipher, or submit a verified scan fix</span></td>
-                <td class="lb-num">0</td><td class="lb-num lb-hide-sm">0</td><td class="lb-num lb-hide-sm">0</td><td class="lb-pts">Open</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="lb-empty-cta">
-          <strong>Join the leaderboard:</strong> Crack an unsolved cipher above, submit a newly found Canadian archival telegram, or send a verified transcription fix via GitHub Issues. To keep the leaderboard fair and focused on community contributions, the maintainer's initial archive work isn't ranked here.
+          Click any contributor to browse and search every cipher they have solved. To keep the leaderboard fair, the maintainer's initial archive work isn't ranked here.
         </div>
 </section>
 
@@ -267,8 +262,7 @@
   &quot;contributor&quot;: {
     &quot;name&quot;: &quot;Your Name&quot;,
     &quot;handle&quot;: &quot;@github-handle&quot;,
-    &quot;role&quot;: &quot;solver&quot;,
-    &quot;aiAssisted&quot;: true
+    &quot;role&quot;: &quot;solver&quot;
   },
   &quot;notes&quot;: &quot;Cross-checks, folio numbers, and prior historical credit if any.&quot;
 }</pre>

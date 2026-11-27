@@ -1,6 +1,6 @@
 # Contributing to Undeciphered.ca
 
-**Undeciphered.ca** is an independent, non-commercial Canadian historical cryptography archive. Historians, archivists, hobbyists, students, and AI-assisted researchers are warmly invited to contribute **raw Canadian ciphertexts, verified keys, deterministic decodings, and archival notes** via **GitHub Issues**.
+**Undeciphered.ca** is an independent, non-commercial Canadian historical cryptography archive. Historians, archivists, hobbyists, students, and independent researchers are warmly invited to contribute **raw Canadian ciphertexts, verified keys, deterministic decodings, and archival notes** via **GitHub Issues**.
 
 ## Policy: Data, Ciphertexts & Keys ONLY (No Code Contributions)
 
@@ -31,7 +31,7 @@ Please allow **1 to 2 weeks** for archive verification and author credit to go l
 2. **No Hosted Copyrighted Scans:** Never upload third-party archival document scans. Link directly to the official repository viewer.
 3. **Deterministic Proof Only (Supply Ciphertext + Key):** Never guess or invent plaintext. Always supply the exact raw ciphertext AND the exact codebook/edition, shift, key, or substitution mapping so any independent reviewer can verify every decoded word. Place uncertain words in `[brackets]`.
 4. **Honest Prior Credit:** If a historian or official volume already published a translation, cite it clearly so the original scholar is credited.
-5. **AI / LLM Disclosure:** AI-assisted cryptanalysis is welcome. Note the tool/model used alongside the human reviewer who verified the proof.
+5. **Automatic & Self-Service Issue Labels:** Issues opened with `[Solve]`, `[New Cipher]`, or `[Correction]` (or `"submissionType"` in JSON) are labeled automatically by GitHub Actions. Any contributor can also apply allowlisted labels (`cipher-solve`, `new-cipher`, `correction`, `community-credit`) by adding a line like `/label cipher-solve community-credit` in the issue body or a comment.
 
 ## Easy Contribution Guide for LLMs & Agents (Issues Only, No PRs)
 
@@ -63,8 +63,7 @@ Include this exact JSON block inside your issue body:
     "name": "Your Name",
     "handle": "@github-handle",
     "url": "https://optional-profile-url",
-    "role": "solver",
-    "aiAssisted": true
+    "role": "solver"
   },
   "notes": "Cross-checks, caveats, and prior historical credit if any."
 }

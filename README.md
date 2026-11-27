@@ -14,7 +14,7 @@ Third-party archival document scans are **not** hosted in this repository. Every
 
 ## Contributing Ciphertexts, Keys & Solutions (Issues Only, No Code PRs)
 
-Historians, archivists, amateur codebreakers, and AI-assisted researchers are warmly invited to help discover, transcribe, decode, and verify Canadian historical ciphers!
+Historians, archivists, amateur codebreakers, and independent researchers are warmly invited to help discover, transcribe, decode, and verify Canadian historical ciphers!
 
 - **What we accept (via GitHub Issues ONLY):**
   - Raw Canadian historical ciphertexts with an official public archive link and shelfmark

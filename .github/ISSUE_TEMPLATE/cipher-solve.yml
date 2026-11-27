@@ -64,7 +64,7 @@ body:
     id: credit_name
     attributes:
       label: How you want to be credited
-      description: "Your preferred name, optional GitHub handle or personal/academic URL, and whether an LLM assisted."
+      description: "Your preferred name, optional GitHub handle, or personal/academic URL."
       placeholder: "Jane Doe (@janedoe) · Independent researcher"
     validations:
       required: true
